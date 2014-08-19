@@ -20,6 +20,12 @@ gem 'wdm'
 
 end
 
+group :development, :test do
+ gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
