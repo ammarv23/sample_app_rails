@@ -15,8 +15,6 @@ group :test do
 gem 'selenium-webdriver'
 gem 'capybara'
 
-gem 'rb-notifu'
-gem 'wdm'
 end
 
 # Use SCSS for stylesheets

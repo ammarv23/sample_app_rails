@@ -8,11 +8,15 @@ gem 'rails', '4.0.8'
 group :development do
 gem 'sqlite3'
 gem 'rspec-rails'
+gem 'guard-rspec'
 end
 
 group :test do
 gem 'selenium-webdriver'
 gem 'capybara'
+
+gem 'rb-notifu'
+gem 'wdm'
 
 end
 
