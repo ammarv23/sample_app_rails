@@ -13,6 +13,7 @@ end
 group :test do
 gem 'selenium-webdriver'
 gem 'capybara'
+
 end
 
 # Use SCSS for stylesheets
