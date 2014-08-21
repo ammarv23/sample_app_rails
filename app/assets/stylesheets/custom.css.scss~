@@ -56,21 +56,29 @@ p {
 	line-height: 1.7em;
 }
 
+@-webkit-keyframes mymove {
+	50% {padding-top: 50px};
+}
+
 /* header */
+
+$pink: #f0f;
 
 #logo {
 	float: left;
 	margin-right: 10px;
 	font-size: 1.7em;
-	color: #fff;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
 	line-height: 1;
+	
  &:hover {
-	color:#f0f;
+	color:$pink;
 	text-decoration: none;
+	-webkit-animation: mymove 5s infinite;
 }
 }
 
@@ -82,9 +90,9 @@ footer {
 	border-top: 1px solid $grayMediumLight;
 	color: $grayLight;
 	a {
-	color: #555;
+	color: $gray;
 		&:hover {
-			color: #222;
+			color: $grayDarker;
 		}
 	}
 	small {
