@@ -15,15 +15,15 @@ group :test do
 gem 'selenium-webdriver'
 gem 'capybara'
 
-gem 'rb-notifu'
-gem 'wdm'
-
 end
 
 group :development, :test do
  gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+
+gem 'rb-notifu'
+gem 'wdm' 
 end
 
 # Use SCSS for stylesheets
