@@ -22,6 +22,16 @@ describe "User pages" do
 			it "should not create a user" do
 				expect { click_button submit }.not_to change(User, :count)
 			end
+
+			it "should return invalid errors" do
+				errors = %w[Name\ can't\ be\ blank Email\ can't\ be\ blank] 
+				click_button submit
+				errors.each do |invalid_error|
+					expect(page).to have_content(invalid_error)
+				end
+			end
+
+		
 		end
 
 		describe "with valid information" do

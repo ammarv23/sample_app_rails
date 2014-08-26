@@ -64,6 +64,8 @@ p {
 
 /* header */
 
+@-webkit-keyframes myfirst { 50% {padding: 10px;} }
+
 $pink: #f0f;
 
 #logo {
@@ -80,6 +82,7 @@ $pink: #f0f;
  &:hover {
 	color:$pink;
 	text-decoration: none;
+	-webkit-animation: myfirst 5s infinite;
 }
 }
 
@@ -142,7 +145,7 @@ aside {
 
 input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
-	width: 100px;
+	width: 100%;
 	margin-bottom: 15px;
 	@include box_sizing;
 }

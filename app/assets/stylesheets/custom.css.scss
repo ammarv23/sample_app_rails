@@ -64,6 +64,8 @@ p {
 
 /* header */
 
+@-webkit-keyframes myfirst { 50% {padding: 10px;} }
+
 $pink: #f0f;
 
 #logo {
@@ -80,6 +82,7 @@ $pink: #f0f;
  &:hover {
 	color:$pink;
 	text-decoration: none;
+	-webkit-animation: myfirst 5s infinite;
 }
 }
 
@@ -149,6 +152,19 @@ input, textarea, select, .uneditable-input {
 
 input {
 	height: auto !important;
+}
+
+#error_explanation {
+	color: #f00;
+	ul {
+		list-style: none;
+		margin: 0 0 18px 0;
+	}
+}
+
+.field_with_errors {
+	@extend .control-group;
+	@extend .error;
 }
 
 /* miscelleneous */
