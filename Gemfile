@@ -10,6 +10,7 @@ gem 'bcrypt-ruby', '3.1.2'
 group :development do
 gem 'sqlite3'
 gem 'rspec-rails'
+gem 'rspec-its'
 gem 'guard-rspec'
 end
 
