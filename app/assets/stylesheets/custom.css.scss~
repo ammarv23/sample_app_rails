@@ -82,7 +82,6 @@ $pink: #f0f;
  &:hover {
 	color:$pink;
 	text-decoration: none;
-	-webkit-animation: myfirst 5s infinite;
 }
 }
 
